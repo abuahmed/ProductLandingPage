@@ -4,26 +4,39 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+    /* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  }
+
+  .flex-container {
+    display: flex;
+  }
+    </style>
   </head>
 
-  <body>
-    Hello World, we are software developers!
-    <header id="header">
-      <img id="header-img" src="" alt="company logo">
+  <body>    
+    <header id="header" class="flex-container" style="position: absolute;">
       <nav id="nav-bar">
         <a class="nav-link" href="#sectionOne">First Link</a>
         <a class="nav-link" href="#sectionTwo">Second Link</a>
         <a class="nav-link" href="#sectionThree">Third Link</a>
       </nav>
+      <img id="header-img" src="https://images.unsplash.com/photo-1558981001-792f6c0d5068?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&auto=format&fit=crop&w=1050&q=80" alt="company logo">
     </header>
+    Hello World, we are software developers!
 
     <section id="sectionOne"><p>Section one</p></section>
     <section id="sectionTwo"><p>Section two</p></section>
     <section id="sectionThree"><p>Section three</p></section>
 
     <video id="video" src=""></video>
-<form id="form">
-  <input type="email" id="email" placeholder="Enter Your Email">
+<form id="form" method="POST" action="https://www.freecodecamp.com/email-submit">
+  <input type="email" id="email" name="email" placeholder="Enter Your Email">
+  <input id="submit" type="submit">
 
 </form>
 
